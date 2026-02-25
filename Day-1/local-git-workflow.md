@@ -1,10 +1,10 @@
-# 📅 Day 1 — Local Git Workflow
+#  Day 1 — Local Git Workflow
 
 > **Goal:** Master the 3 areas of Git and the core local workflow: init → status → add → commit → log.
 
 ---
 
-## 📋 Topics Covered Today
+##  Topics Covered Today
 
 - The 3 Areas of Git
 - File States in Git
@@ -59,7 +59,7 @@ Git manages your project across 3 distinct areas. Understanding this is the most
 
 ---
 
-## 3. 🔄 The Core Git Workflow
+## 3.  The Core Git Workflow
 
 ### Step 1: Check Status
 ```bash
@@ -96,7 +96,7 @@ git status
 git commit -m "Your descriptive commit message"
 ```
 
-> 📌 **Good commit message tips:**
+>  **Good commit message tips:**
 > - Use present tense: `"Add login page"` not `"Added login page"`
 > - Be specific: `"Fix null pointer in user auth"` not `"Fix bug"`
 > - Keep first line under 72 characters
@@ -118,7 +118,7 @@ Each commit stores:
 
 ---
 
-## 5. 📜 Viewing History with git log
+## 5.  Viewing History with git log
 
 ```bash
 # Full history with all details
@@ -155,7 +155,7 @@ git log --stat
 
 ---
 
-## 6. 🔍 git diff — Compare Changes (Local Stages)
+## 6.  git diff — Compare Changes (Local Stages)
 
 ```bash
 # Working Directory vs Staging Area (what you changed but haven't staged yet)
@@ -168,11 +168,11 @@ git diff --staged
 git diff HEAD
 ```
 
-> 💡 Use `git diff` before `git add` to review your changes, and `git diff --staged` before `git commit` to confirm what will be committed.
+>  Use `git diff` before `git add` to review your changes, and `git diff --staged` before `git commit` to confirm what will be committed.
 
 ---
 
-## 7. 🗑️ Removing and Moving Files
+## 7.  Removing and Moving Files
 
 ```bash
 # Delete file AND stage the deletion in one command
@@ -185,7 +185,7 @@ git rm --cached filename.txt
 git mv oldname.txt newname.txt
 ```
 
-> ⚠️ Git does **NOT** track empty directories.  
+>  Git does **NOT** track empty directories.  
 > To track a folder, add a placeholder file like `.gitkeep` inside it.
 
 ---
@@ -232,7 +232,7 @@ git log --oneline
 
 ---
 
-## ✅ Day 1 Summary Checklist
+##  Day 1 Summary Checklist
 
 ```
 ✔ Understand the 3 areas: Working Directory → Staging Area → Local Repo
@@ -247,7 +247,7 @@ git log --oneline
 
 ---
 
-## 📌 Quick Reference — Day 1
+##  Quick Reference — Day 1
 
 ```bash
 git status                    # Check file states
