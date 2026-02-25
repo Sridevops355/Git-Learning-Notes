@@ -109,7 +109,7 @@ git --version
 
 ---
 
-## 5. 🪪 Configure Your Identity
+## 5.  Configure Your Identity
 
 Before making any commits, Git needs to know who you are. This information is permanently recorded in every commit.
 
