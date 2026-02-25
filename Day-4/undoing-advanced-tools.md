@@ -1,10 +1,10 @@
-# 📅 Day 4 — Undoing Things & Advanced Tools
+#  Day 4 — Undoing Things & Advanced Tools
 
 > **Goal:** Master reverting mistakes at every stage — working directory, staging area, and local repo. Learn git stash in depth, git diff in all variants, and how to read git log like a pro.
 
 ---
 
-## 📋 Topics Covered Today
+##  Topics Covered Today
 
 - Reverting Changes — The 3 Zones
 - git restore (working dir & staging)
@@ -17,7 +17,7 @@
 
 ---
 
-## 1. 🔙 Reverting Changes — Overview of the 3 Zones
+## 1.  Reverting Changes — Overview of the 3 Zones
 
 Every undo in Git targets a specific zone. Pick the right command for where your change currently lives.
 
@@ -44,7 +44,7 @@ git restore <filename>
 git checkout -- <filename>
 ```
 
-> ⚠️ **WARNING: This is permanent.** Your edits are gone forever — there is no undo for this undo.  
+>  **WARNING: This is permanent.** Your edits are gone forever — there is no undo for this undo.  
 > Only use it when you're sure you want to discard your changes.
 
 **Example:**
@@ -67,7 +67,7 @@ git restore --staged <filename>
 git reset HEAD <filename>
 ```
 
-> ✅ Your edits are **NOT lost** — the file goes back to "modified" state in working directory.
+>  Your edits are **NOT lost** — the file goes back to "modified" state in working directory.
 
 **Example:**
 ```bash
@@ -115,7 +115,7 @@ Before: [Working Dir] → [Staging] → [Commit A] → [Commit B (HEAD)]
 After:  [Working Dir (B's changes here)] → [Staging empty] → [Commit A (HEAD)]
 ```
 
-> ✅ Changes are **kept** in working directory. You can re-stage and re-commit.
+>  Changes are **kept** in working directory. You can re-stage and re-commit.
 
 ---
 
@@ -131,7 +131,7 @@ Before: [Working Dir] → [Staging] → [Commit A] → [Commit B (HEAD)]
 After:  [Working Dir] → [Staging (B's changes here)] → [Commit A (HEAD)]
 ```
 
-> ✅ Changes are **kept** in staging area — ready to re-commit immediately (useful to rewrite a commit message).
+>  Changes are **kept** in staging area — ready to re-commit immediately (useful to rewrite a commit message).
 
 ---
 
@@ -197,13 +197,13 @@ After:  A ── B ── C ── D      (D is a new commit that undoes C's cha
 | **Best for** | Local commits not yet pushed | Commits already pushed to shared branch |
 | **Risk** | Can cause conflicts for teammates | Very safe |
 
-> 📌 **Rule of thumb:**  
+>  **Rule of thumb:**  
 > - Committed locally only → use `git reset`  
 > - Already pushed to remote → use `git revert`
 
 ---
 
-## 8. 📦 git stash — Temporary Shelf for Your Work
+## 8.  git stash — Temporary Shelf for Your Work
 
 Stash saves your uncommitted changes in a temporary stack so you can switch context (branches, urgent tasks) without committing half-done work.
 
@@ -280,7 +280,7 @@ git stash pop                # Restore saved changes on the new branch
 
 ---
 
-## 9. 🔍 git diff — Full Coverage
+## 9.  git diff — Full Coverage
 
 ```bash
 # 1. Working Directory vs Staging Area
@@ -316,7 +316,7 @@ git diff main
 
 ---
 
-## 10. 📜 git log — Advanced Reading
+## 10.  git log — Advanced Reading
 
 ```bash
 # Standard full log
@@ -386,7 +386,7 @@ git log --oneline  # Notice the new revert commit added
 
 ---
 
-## ✅ Day 4 Summary Checklist
+##  Day 4 Summary Checklist
 
 ```
 ✔ git restore <file> — discard working dir changes (permanent!)
@@ -406,7 +406,7 @@ git log --oneline  # Notice the new revert commit added
 
 ---
 
-## 📌 Quick Reference — Day 4
+##  Quick Reference — Day 4
 
 ```bash
 # Restore
