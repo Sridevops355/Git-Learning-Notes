@@ -1,10 +1,10 @@
-# 📅 Day 0 — Setup & Core Concepts
+#  Day 0 — Setup & Core Concepts
 
 > **Goal:** Understand what Git is, install it, configure your identity, and grasp the theory of Version Control Systems.
 
 ---
 
-## 📋 Topics Covered Today
+##  Topics Covered Today
 
 - What is Version Control?
 - Centralized vs Distributed VCS
@@ -50,10 +50,10 @@ Every developer has a **full copy** of the entire repository including all histo
 Developer A (full repo)  ◄──►  Remote Server  ◄──►  Developer B (full repo)
 ```
 
-| Examples | **Git** ✅, Mercurial, Bazaar |
+| Examples | **Git** , Mercurial, Bazaar |
 |----------|------------------------------|
 
-> 💡 **Git is the most popular VCS in the world.**  
+>  **Git is the most popular VCS in the world.**  
 > Created by **Linus Torvalds** (creator of the Linux kernel) with 3 design goals:
 > - **Distributed** — every developer has the full repo
 > - **Efficient** — fast for large codebases
@@ -74,13 +74,13 @@ You push your local repository to a hosting platform so your team can collaborat
 | **AWS CodeCommit** | Amazon Cloud | aws.amazon.com |
 | **Gitolite** | Self-hosted | – |
 
-> 📌 **Public vs Private Repositories**
+>  **Public vs Private Repositories**
 > - **Public** — Anyone can read the code. Used for open source projects.
 > - **Private** — Only invited collaborators can access. Used for company/personal projects.
 
 ---
 
-## 4. 📥 Installing Git
+## 4.  Installing Git
 
 ### All Operating Systems
 Download from: **[https://git-scm.com/downloads](https://git-scm.com/downloads)**  
@@ -101,7 +101,7 @@ apt install git -y
 brew install git
 ```
 
-### ✅ Verify Installation
+###  Verify Installation
 ```bash
 git --version
 # Expected output: git version 2.x.x
@@ -125,12 +125,12 @@ git config --global user.name
 git config --global user.email
 ```
 
-> 💡 `--global` = applies to ALL repositories on your machine.  
+>  `--global` = applies to ALL repositories on your machine.  
 > Without `--global` it applies only to the current repository.
 
 ---
 
-## 6. 🏁 Initialise a Repository
+## 6.  Initialise a Repository
 
 ```bash
 # Create a new project folder
@@ -147,7 +147,7 @@ git init
 - Configuration
 - Staging index
 
-> 💡 `git init` is **optional** if you are cloning an existing repo from GitHub (covered in Day 2).
+>  `git init` is **optional** if you are cloning an existing repo from GitHub (covered in Day 2).
 
 ---
 
@@ -166,7 +166,7 @@ Two different file contents **cannot** have the same hash. This is how Git guara
 
 ---
 
-## ✅ Day 0 Summary Checklist
+##  Day 0 Summary Checklist
 
 ```
 ✔ Git installed → git --version works
@@ -179,7 +179,7 @@ Two different file contents **cannot** have the same hash. This is how Git guara
 
 ---
 
-## 📌 Quick Reference — Day 0
+##  Quick Reference — Day 0
 
 ```bash
 # Install (Linux)
