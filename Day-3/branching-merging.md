@@ -1,10 +1,10 @@
-# 📅 Day 3 — Branching & Merging
+#  Day 3 — Branching & Merging
 
 > **Goal:** Create branches for parallel development, merge them back safely, and confidently resolve merge conflicts.
 
 ---
 
-## 📋 Topics Covered Today
+##  Topics Covered Today
 
 - What is a Branch and why use it
 - HEAD and DETACHED HEAD
@@ -55,7 +55,7 @@ feature:             D ── E ────────
 
 ---
 
-## 4. 🌿 Branch Commands
+## 4.  Branch Commands
 
 ```bash
 # List all local branches (* marks the current branch)
@@ -85,7 +85,7 @@ git branch -D dev
 
 ---
 
-## 5. 🔀 Merging Branches
+## 5.  Merging Branches
 
 Merge brings changes from one branch **into** another. Always **checkout the target branch first**, then merge the source into it.
 
@@ -142,11 +142,11 @@ git merge dev   # creates a merge commit automatically
 git merge --no-ff dev   # Always create a merge commit
 ```
 
-> 💡 Many teams use `--no-ff` to keep a clear record in history of when features were merged.
+>  Many teams use `--no-ff` to keep a clear record in history of when features were merged.
 
 ---
 
-## 6. ⚠️ Resolving Merge Conflicts
+## 6.  Resolving Merge Conflicts
 
 ### When do conflicts happen?
 - **Same branch:** Two developers edited the **same line** of the **same file** and one pushes after the other
@@ -228,7 +228,7 @@ After resolving, always **test the application** to make sure:
 
 ---
 
-## 7. 🚫 Blocked Checkout — Real World Scenario
+## 7.  Blocked Checkout — Real World Scenario
 
 When you try to switch branches with uncommitted changes to a file that also changed in the target branch, Git **blocks you** to prevent data loss:
 
@@ -243,14 +243,14 @@ Aborting
 ### Why does this happen?
 Git refuses to switch because it would have to overwrite your uncommitted local changes — losing your work forever.
 
-### ✅ Fix Option 1: Stash (save temporarily and restore later)
+###  Fix Option 1: Stash (save temporarily and restore later)
 ```bash
 git stash              # Saves your changes aside
 git checkout feature   # Switch branches safely
 git stash pop          # Restore your saved changes on the new branch
 ```
 
-### ✅ Fix Option 2: Commit your work first
+###  Fix Option 2: Commit your work first
 ```bash
 git add demo.txt
 git commit -m "WIP: save before switching branch"
@@ -290,7 +290,7 @@ git branch -d feature-login
 
 ---
 
-## ✅ Day 3 Summary Checklist
+##  Day 3 Summary Checklist
 
 ```
 ✔ Branches = independent lines of development
@@ -310,7 +310,7 @@ git branch -d feature-login
 
 ---
 
-## 📌 Quick Reference — Day 3
+##  Quick Reference — Day 3
 
 ```bash
 git branch                  # List local branches
