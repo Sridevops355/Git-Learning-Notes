@@ -1,10 +1,10 @@
-# 📅 Day 2 — GitHub & Remote Repositories
+#  Day 2 — GitHub & Remote Repositories
 
 > **Goal:** Connect your local repo to GitHub. Push, pull, clone, and authenticate securely using SSH and Personal Access Tokens.
 
 ---
 
-## 📋 Topics Covered Today
+##  Topics Covered Today
 
 - What is GitHub?
 - The 4th Area of Git — Remote Repository
@@ -92,7 +92,7 @@ git push
 git push origin main
 ```
 
-> 🔑 **Golden Rule: Always pull before you push.**  
+>  **Golden Rule: Always pull before you push.**  
 > This prevents push rejections when teammates have committed before you.
 
 ---
@@ -113,13 +113,13 @@ git remote remove origin
 git remote set-url origin https://github.com/username/new-repo.git
 ```
 
-> 💡 **`origin`** is just the default name for your remote. You can name it anything but `origin` is the industry convention.
+>  **`origin`** is just the default name for your remote. You can name it anything but `origin` is the industry convention.
 
 ---
 
-## 6. 🔐 Authentication — 3 Methods
+## 6.  Authentication — 3 Methods
 
-### ✅ Method 1: SSH Key (Recommended ⭐)
+###  Method 1: SSH Key (Recommended )
 
 SSH is the most secure and convenient method once set up — no password prompts.
 
@@ -148,7 +148,7 @@ git remote add origin git@github.com:username/repository.git
 
 ---
 
-### ✅ Method 2: Personal Access Token (PAT)
+###  Method 2: Personal Access Token (PAT)
 
 Used when SSH is not available. A token replaces your password.
 
@@ -174,7 +174,7 @@ Only works if **two-factor authentication (2FA) is NOT enabled** on GitHub. Gene
 
 ---
 
-## 7. 🔄 Switching Authentication Methods
+## 7.  Switching Authentication Methods
 
 If you cloned with HTTPS and want to switch to SSH:
 
@@ -255,7 +255,7 @@ git push
 
 ---
 
-## ✅ Day 2 Summary Checklist
+##  Day 2 Summary Checklist
 
 ```
 ✔ Understand GitHub as a remote Git hosting platform
@@ -272,7 +272,7 @@ git push
 
 ---
 
-## 📌 Quick Reference — Day 2
+##  Quick Reference — Day 2
 
 ```bash
 git clone <url>                   # Clone remote repo locally
