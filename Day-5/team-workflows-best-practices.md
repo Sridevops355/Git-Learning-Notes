@@ -1,10 +1,10 @@
-# 📅 Day 5 — Team Workflows & Best Practices
+#  Day 5 — Team Workflows & Best Practices
 
 > **Goal:** Work effectively in a team — fix push rejections, cherry-pick commits, use .gitignore, understand forks, rebase, and protect your main branch.
 
 ---
 
-## 📋 Topics Covered Today
+##  Topics Covered Today
 
 - Push Rejected — Causes & Fixes
 - Pull Strategies: Fast-forward, Merge, Rebase
@@ -19,7 +19,7 @@
 
 ---
 
-## 1. 🚨 Push Rejected — "Unable to Push"
+## 1.  Push Rejected — "Unable to Push"
 
 ### The Problem
 ```
@@ -49,9 +49,9 @@ git push
 
 ---
 
-## 2. ⛓️ Pull Strategies — Fast-forward vs Merge vs Rebase
+## 2.  Pull Strategies — Fast-forward vs Merge vs Rebase
 
-### Strategy 1: Fast-Forward Pull ✅
+### Strategy 1: Fast-Forward Pull 
 Works **only** when your local branch has NO new commits since the last pull — there is no commit divergence.
 
 ```
@@ -86,8 +86,8 @@ git pull --no-rebase
 # or just: git pull  (merge is the default when diverged)
 ```
 
-> ✅ **Safer for teams unfamiliar with rebase.** Full history preserved.  
-> ⚠️ Creates an extra merge commit in history which can look cluttered.
+>  **Safer for teams unfamiliar with rebase.** Full history preserved.  
+>  Creates an extra merge commit in history which can look cluttered.
 
 ---
 
@@ -106,8 +106,8 @@ Local:  A ── B ── C ── D'  (D' is your commit replayed on top, new h
 git pull --rebase
 ```
 
-> ✅ Cleaner linear history — looks like everyone worked in sequence.  
-> ⚠️ **Never rebase commits that have already been pushed to a shared remote branch** — it rewrites history and causes conflicts for teammates.
+>  Cleaner linear history — looks like everyone worked in sequence.  
+>  **Never rebase commits that have already been pushed to a shared remote branch** — it rewrites history and causes conflicts for teammates.
 
 ---
 
@@ -121,7 +121,7 @@ git pull --rebase
 
 ---
 
-## 3. 🍒 git cherry-pick — Apply Specific Commits
+## 3.  git cherry-pick — Apply Specific Commits
 
 Cherry-pick lets you take **one specific commit** from any branch and apply it to your current branch — without merging the entire branch.
 
@@ -165,7 +165,7 @@ git cherry-pick abc123^..def456
 
 ---
 
-## 5. 🔄 git rebase — Linear History
+## 5.  git rebase — Linear History
 
 Rebase moves (replays) your commits to start from the tip of another branch, making history look like everyone worked in sequence.
 
@@ -193,7 +193,7 @@ feature: A ── B ── C ── D' ── E'   (D and E replayed on top of C
 
 ---
 
-## 6. 🔧 Interactive Rebase — Edit History
+## 6.  Interactive Rebase — Edit History
 
 Interactive rebase lets you rewrite, combine, reorder, or delete commits before sharing them. Use it to clean up your commit history before merging.
 
@@ -246,11 +246,11 @@ drop   d4e5f6 Debug code (shouldn't be here)
 pick   7g8h9i Add validation
 ```
 
-> ⚠️ **Never interactive-rebase commits already pushed to a shared remote branch.**
+>  **Never interactive-rebase commits already pushed to a shared remote branch.**
 
 ---
 
-## 7. 🙈 .gitignore — Exclude Files from Tracking
+## 7.  .gitignore — Exclude Files from Tracking
 
 The `.gitignore` file tells Git which files and folders to **never track or stage** — even if they exist in your project folder.
 
@@ -304,12 +304,12 @@ Thumbs.db        # Windows
 - Use `/` to target directories: `temp/` ignores the temp folder
 - Use `!` to un-ignore: `!important.log` tracks this one log file
 
-> 💡 **Generate .gitignore for your tech stack automatically:**  
+>  **Generate .gitignore for your tech stack automatically:**  
 > [https://www.toptal.com/developers/gitignore](https://www.toptal.com/developers/gitignore)
 
 ---
 
-## 8. 🍴 Git Fork — Contributing Without Write Access
+## 8.  Git Fork — Contributing Without Write Access
 
 **Forking** creates your own personal copy of someone else's repository under your GitHub account. You can make any changes to your fork without affecting the original.
 
@@ -351,7 +351,7 @@ Original Repo (someone else's)
 
 ---
 
-## 9. 🛡️ Branch Protection Rules
+## 9.  Branch Protection Rules
 
 Branch protection rules prevent **unauthorized or accidental changes** to critical branches like `main`, `master`, or `release`. This is configured on GitHub under: `Settings → Branches → Add Rule`.
 
@@ -428,7 +428,7 @@ git branch -d feature-user-auth
 
 ---
 
-## ✅ Day 5 Summary Checklist
+##  Day 5 Summary Checklist
 
 ```
 ✔ Push rejected → git pull first, then git push
@@ -449,7 +449,7 @@ git branch -d feature-user-auth
 
 ---
 
-## 📌 Quick Reference — Day 5
+##  Quick Reference — Day 5
 
 ```bash
 # Fix push rejection
@@ -478,7 +478,7 @@ git branch -vv                      # Check tracking info
 
 ---
 
-## 🗂️ Master Cheat Sheet — All 6 Days
+##  Master Cheat Sheet — All 6 Days
 
 | Command | Description |
 |---------|-------------|
@@ -518,7 +518,7 @@ git branch -vv                      # Check tracking info
 
 ---
 
-## 🏁 What to Learn Next
+##  What to Learn Next
 
 | Topic | What it covers |
 |-------|---------------|
@@ -533,9 +533,9 @@ git branch -vv                      # Check tracking info
 
 ---
 
-> 📌 **VS Code Tip:** Install the **GitLens** extension for visual blame, history, heatmaps, and branch management directly inside your editor.
+>  **VS Code Tip:** Install the **GitLens** extension for visual blame, history, heatmaps, and branch management directly inside your editor.
 
 ---
 
 *Previous → Day 4: Undoing Things & Advanced Tools*  
-*Course Complete! 🎉*
+*Course Complete! 
